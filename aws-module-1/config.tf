@@ -22,7 +22,7 @@ resource "aws_instance" "ec2_instance_test" {
 }
 
 resource "aws_s3_bucket" "terraform_state_tathagat_test" {
-  bucket = "terraform-state-tathagat-test"
+  bucket = "terraform-state-suhas-test"
   # Enable versioning so we can see the full revision history of our
   # state files
   versioning {
