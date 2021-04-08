@@ -7,6 +7,10 @@ variable "tag" {
   default = "tathagat-test-1"
 }
 
+variable "instance_type" {
+  default = "t2.micro"
+}
+
 provider "aws" {
   access_key = var.access_key
   secret_key = var.secret_key
