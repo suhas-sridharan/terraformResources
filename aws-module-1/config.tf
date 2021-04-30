@@ -26,7 +26,7 @@ resource "aws_instance" "ec2_instance_test" {
 }
 
 resource "aws_s3_bucket" "terraform_state_tathagat_test" {
-  bucket = "terraform-state-suhas-test"
+  bucket = "terraform-state-suhas-test1"
   # Enable versioning so we can see the full revision history of our
   # state files
   versioning {
@@ -47,7 +47,7 @@ terraform {
     access_key = var.access_key
     secret_key = var.secret_key
     # Replace this with your bucket name!
-    bucket         = "terraform-state-suhas-test"
+    bucket         = "terraform-state-suhas-test1"
     region         = "us-east-1"
     key = "terraform.tfstate"
     # Replace this with your DynamoDB table name!
