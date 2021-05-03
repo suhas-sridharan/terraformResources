@@ -8,7 +8,7 @@ provider "aws" {
        region = var.region
        access_key = var.access_key
        secret_key = var.secret_key
-       tag_name = var.tag
+       tag_name = var.tag_name
 }
 
 
